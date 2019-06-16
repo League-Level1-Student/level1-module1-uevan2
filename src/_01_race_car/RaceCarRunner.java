@@ -1,6 +1,6 @@
 package _01_race_car;
 /*
- *    Copyright (c) The League of Amazing Programmers 2013-2019
+ *    Copyright © The League of Amazing Programmers 2013-2019
  *    Level 1
  */
 
@@ -19,6 +19,7 @@ public class RaceCarRunner {
 		// 4. If the car is damaged. Bring it in for a pit stop.
 
 		// 5. Help the car move into first place.
+		
 
 	}
 }
