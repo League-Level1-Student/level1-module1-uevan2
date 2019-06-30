@@ -12,7 +12,15 @@ public class Vault {
 
 	public static void main(String[] args) {
 		Vault x = new Vault();
-		if(x.triCode(8328)==
+		if(x.triCode(8328)) {
+			System.out.println("correct");
+		}
+		else {
+			System.out.println("incorrect");
+		}
+				
+				
+				
 	}
 
 }
