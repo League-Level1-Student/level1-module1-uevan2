@@ -1,0 +1,23 @@
+1.
+
+
+
+	public WhiteBoardMarker (int inkLeft, String color){
+		this.inkLeft=inkLeft;
+		this.color=color;
+	}
+
+2.
+
+public class Dinosaur {
+
+	public Dinosaur(String species, boolean carnivorous, int yearExtinct){
+		this.species=species;
+		this.carniverous=carnivorous;
+		this.yearExtinct=yearExtinct;
+	}
+}
+
+public static void main(String[] args) {
+	
+}

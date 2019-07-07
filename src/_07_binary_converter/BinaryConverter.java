@@ -1,6 +1,5 @@
 package _07_binary_converter;
 
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -12,11 +11,11 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class BinaryConverter implements ActionListener {
-	JFrame f1 = new JFrame();
+	JFrame f1 = new JFrame("Convert 8 bits of binary to ASCII");
 	JPanel p1 = new JPanel();
 	JTextField answer = new JTextField(20);
 	JLabel l1 = new JLabel();
-	JButton b1 = new JButton();
+	JButton b1 = new JButton("convert");
 	
 	void setup() {
 		f1.add(p1);
@@ -27,10 +26,6 @@ public class BinaryConverter implements ActionListener {
 		f1.setVisible(true);
 		f1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f1.pack();
-		p1.setForeground(Color.black);
-		p1.setBackground(Color.black);
-		answer.setBackground(Color.DARK_GRAY);
-		b1.setBackground(Color.DARK_GRAY);
 	}
 	
 	String convert(String input) {
@@ -62,6 +57,9 @@ public class BinaryConverter implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		answer.getText();
+		String answer2 = answer.getText();
+		String convertReturn = convert(answer2);
+		l1.setText(convertReturn);
+		f1.pack();
 	}
 }
